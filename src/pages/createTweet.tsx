@@ -1,8 +1,16 @@
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import { Alert } from "reactstrap";
+import { useState } from "react";
 
 // const ATTRIBUTES = ["health", "attack", "speed"];
 
 export default function CreateTweet() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const alertClick = () => {
+    setShowAlert(true); // Show the alert by setting the state
+  };
   return (
     <div className={styles.container} style={{ fontSize: "22px" }}>
       <div
@@ -34,7 +42,22 @@ export default function CreateTweet() {
           minHeight: "90vh",
         }}
       >
-        <div className="w-3/4 h-[50vh] flex  ">
+        {showAlert && (
+          <div className="bg-green-400 p-5 rounded">
+            <Alert color="success">
+              <strong>Success!</strong> This is a success alert—{" "}
+              <Link
+                className="underline underline-offset-8"
+                href={
+                  "https://aquamarine-behavior-626947.framer.app/today-uploaded"
+                }
+              >
+                check it out!
+              </Link>
+            </Alert>
+          </div>
+        )}
+        <div className="w-3/4 h-[50vh] flex pt-4 ">
           <form className="w-full  ">
             <div className=" sm:rounded-md sm:overflow-hidden ">
               <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
@@ -141,6 +164,7 @@ export default function CreateTweet() {
                 <button
                   type="button"
                   className="text-black p-1 rounded-3xl text-white"
+                  onClick={(e) => alertClick()}
                   style={{ padding: "20px 41px", backgroundColor: "#1e1d30" }}
                 >
                   Submit

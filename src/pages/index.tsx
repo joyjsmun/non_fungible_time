@@ -58,11 +58,26 @@ export default function Home() {
       <div
         style={{
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
-          minHeight: "100vh",
+
+          minHeight: "90vh",
         }}
       >
+        <div className=" p-5 rounded flex flex-col justify-center items-center  w-auto font-bold space-y-6 mb-10 text-3xl">
+          <span>
+            {" "}
+            <img
+              src="/logo.jpg"
+              style={{
+                padding: "3px",
+                width: "10rem",
+              }}
+            />
+          </span>
+          <div>Please! Verify Whether You are Human or Not</div>{" "}
+          <div className="text-xl">Team. NonFungible Time</div>
+        </div>
         <IDKitWidget
           action={process.env.NEXT_PUBLIC_WLD_ACTION_NAME!}
           onSuccess={onSuccess}
