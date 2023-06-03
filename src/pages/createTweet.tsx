@@ -74,7 +74,7 @@ export default function CreateTweet() {
                       type="text"
                       name="name"
                       id="name"
-                      className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                      className="focus:ring-indigo-500 py-2 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
                       placeholder="Title of time event"
                     />
                   </div>
@@ -92,7 +92,7 @@ export default function CreateTweet() {
                       id="description"
                       name="description"
                       rows={3}
-                      className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                      className=" py-2 focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                       placeholder="Some time event description..."
                       defaultValue={""}
                     />

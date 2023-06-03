@@ -23,11 +23,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<Reply>
 	}).then(async (verifyRes) => {
 		const wldResponse = await verifyRes.json()
 		if (verifyRes.status == 200) {
-			res.status(200).send({ code: wldResponse.code });
-			console.log(res)
-			// This is where you should perform backend actions based on the verified credential, such as setting a user as "verified" in a database
 
-		} else {
+			console.log(res);
+			// This is where you should perform backend actions based on the verified credential, such as setting a user as "verified" in a database
+		  } else {
 			res.status(400).send({ code: wldResponse.code });
 		}
 	});
