@@ -4,6 +4,8 @@ We decided to prioritize back-end development and blockchain integrations leavin
 
 Though we couldn't present a complete live demo, we've created a thoughtfully designed wireframe that represents our app's core functionalities. This approach emphasizes our commitment to creating a secure and reliable platform, which we believe is the backbone of any successful application.
 
+We will complete our frontend during Eth HackFS(June)
+
 ## Getting Started
 
 - Local Machine
@@ -23,4 +25,4 @@ Though we couldn't present a complete live demo, we've created a thoughtfully de
 
 5. Upon verification, you will be redirected by our landing page as verified
 
-First, run the development server:
+
