@@ -6,8 +6,7 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
   const onSuccess = (result: ISuccessResult) => {
-    // This is where you should perform frontend actions once a user has been verified, such as redirecting to a new page
-    router.push("https://aquamarine-behavior-626947.framer.app/");
+    router.push("https://nftime.framer.website/home-varified");
   };
 
   const handleProof = async (result: ISuccessResult) => {
